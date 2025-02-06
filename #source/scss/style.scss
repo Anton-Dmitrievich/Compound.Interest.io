@@ -1,0 +1,278 @@
+@import "_nullstyle";
+body{
+	font-size: 16px;
+	background: rgb(248, 247, 245);
+	border: 5px solid #5e5373;
+	padding:30px;
+	font-weight: 700;
+
+}
+.body {
+
+	width: 600px;
+	height: 100%;
+	margin: auto;
+	-webkit-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2) inset;
+	-moz-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2) inset;
+	box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2) inset;
+	padding: 20px;
+}
+.header {
+	width: 100%;
+	height: 40px;
+	font-size: 2em;
+	text-align: center;
+	margin-bottom:20px ;
+	-webkit-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+
+}
+.calculator {
+
+		// .calculator_stepOne
+		margin-bottom: 40px;
+		&_stepOne {
+		width: 100%;
+		font-size: 1em;
+		margin-bottom:20px;
+		padding: 10px;
+		-webkit-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+		-moz-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+		box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+		flex: 0 1 100%;
+			label{
+				display: block;
+			}
+			input{
+				width: 100%;
+			}
+		}
+
+		// .calculator_title
+
+		&_title {
+		}
+
+		// .calculator_beginSum
+
+		&_beginSum {
+			
+		}
+
+		// .calculator_blockLeft
+
+		&_blockLeft {
+			font-size: 1em;
+			margin-bottom:20px;
+			padding: 10px;
+			-webkit-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+			-moz-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+			box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+			flex: 0 1 50%;
+		}
+
+		// .calculator_regular
+
+		&_regular {
+			
+			height: 40px;
+			margin-bottom: 10px;
+		}
+
+		// .calculator_Blocklabel
+
+		&_Blocklabel {
+		margin-bottom:3px ;
+		}
+
+		// .calculator_inputSum
+
+		&_inputSum {
+		}
+
+		// .calculator_procent
+
+		&_procent {
+			
+			height: 40px;
+		}
+
+		// .calculator_blockRight
+
+		&_blockRight {
+			font-size: 1em;
+			margin-bottom:20px;
+			padding: 10px;
+			-webkit-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+			-moz-box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+			box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+		flex: 0 1 50%;
+		position: relative;
+		}
+
+		// .calculator_Time
+
+		&_Time {
+			display: flex;
+			flex-direction:row;
+		}
+
+		// .calculator_buttonTime
+
+		&_buttonTime {
+			margin: 0 0 10px 10px;
+			height: 40px;
+			width: 100px;
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			button{
+				height: 40px;
+				width: 100px;
+			}
+		}
+		&_buttonTime:active {
+		margin: 0 0 10px 10px;
+		-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+		-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+		box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+		}
+
+		// .calculator_ul
+
+		&_ulSum {
+			position: absolute;
+			z-index: 3;
+			right: 40px;
+			top:2;
+			display: none;
+		}
+		
+		&_ulSumOpen {
+			position: absolute;
+			z-index: 3;
+			right: 40px;
+			top:2;
+			display: block;
+		}
+		
+		&_ulSum-buttonFirst{
+			width: 100px;
+			height: 20px;
+			margin-bottom: 6px;
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+		}
+		&_ulSum-buttonSecond{
+			width: 100px;
+			height: 20px;
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+			box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+		}
+		&_ulSum-buttonFirst:active{
+			width: 100px;
+			height: 20px;
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+			-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+			box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+		}
+		&_ulSum-buttonSecond:active{
+			width: 100px;
+			height: 20px;
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+			-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+			box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+		}
+		// .calculator_years
+		
+		&_years {
+		}
+
+		// .calculator_blockBatton
+
+		&_blockBatton {
+			
+			height: 30px;
+			text-align: center;
+			
+		}
+}
+.flexbox {
+
+		// .flexbox_calculator
+
+		&_calculator {
+			display:flex;
+			flex-wrap:wrap;
+
+		}
+
+		// .flexbox_blockLeft
+
+		&_blockLeft {
+			
+		}
+
+		// .flexbox_blockRight
+
+		&_blockRight {
+			
+		}
+
+		// .flexbox_blockShow
+
+		&_blockShow {
+			display:flex;
+			flex-wrap:wrap;
+			text-align: center;
+		}	
+}
+.inputStart {
+	width: 100%;
+}
+.button {
+height: 35px;
+width: 100px;
+border-radius: 5px;
+-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+font-size: 1em;
+font-weight: 700;
+}
+.button:active {
+	height: 35px;
+	width: 100px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+	-moz-box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+	box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+	}
+.blockShow {
+
+		// .blockShow_common
+
+		&_common {
+			
+			flex: 0 1 100%;
+			
+			
+		}
+
+		// .blockShow_invest
+
+		&_invest {
+			flex: 0 1 50%;
+		}
+
+		// .blockShow_allProcent
+
+		&_allProcent {
+			flex: 0 1 50%;
+		}
+}
+.grafik {
+}

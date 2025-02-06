@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Playfair+Display:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*install font lato*/
+body {
+  font-size: 16px;
+  background: rgb(248, 247, 245);
+  border: 5px solid #5e5373;
+  padding: 30px;
+  font-weight: 700;
+}
+
+.body {
+  width: 600px;
+  height: 100%;
+  margin: auto;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2) inset;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  height: 40px;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+}
+
+.calculator {
+  margin-bottom: 40px;
+}
+.calculator_stepOne {
+  width: 100%;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+  flex: 0 1 100%;
+}
+.calculator_stepOne label {
+  display: block;
+}
+.calculator_stepOne input {
+  width: 100%;
+}
+.calculator_blockLeft {
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+  flex: 0 1 50%;
+}
+.calculator_regular {
+  height: 40px;
+  margin-bottom: 10px;
+}
+.calculator_Blocklabel {
+  margin-bottom: 3px;
+}
+.calculator_procent {
+  height: 40px;
+}
+.calculator_blockRight {
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 4px rgba(34, 60, 80, 0.2);
+  flex: 0 1 50%;
+  position: relative;
+}
+.calculator_Time {
+  display: flex;
+  flex-direction: row;
+}
+.calculator_buttonTime {
+  margin: 0 0 10px 10px;
+  height: 40px;
+  width: 100px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+}
+.calculator_buttonTime button {
+  height: 40px;
+  width: 100px;
+}
+.calculator_buttonTime:active {
+  margin: 0 0 10px 10px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+}
+.calculator_ulSum {
+  position: absolute;
+  z-index: 3;
+  right: 40px;
+  top: 2;
+  display: none;
+}
+.calculator_ulSumOpen {
+  position: absolute;
+  z-index: 3;
+  right: 40px;
+  top: 2;
+  display: block;
+}
+.calculator_ulSum-buttonFirst {
+  width: 100px;
+  height: 20px;
+  margin-bottom: 6px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+}
+.calculator_ulSum-buttonSecond {
+  width: 100px;
+  height: 20px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+}
+.calculator_ulSum-buttonFirst:active {
+  width: 100px;
+  height: 20px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+}
+.calculator_ulSum-buttonSecond:active {
+  width: 100px;
+  height: 20px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+}
+.calculator_blockBatton {
+  height: 30px;
+  text-align: center;
+}
+
+.flexbox_calculator {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexbox_blockShow {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.inputStart {
+  width: 100%;
+}
+
+.button {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0.18);
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.button:active {
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px -1px rgba(34, 60, 80, 0);
+}
+
+.blockShow_common {
+  flex: 0 1 100%;
+}
+.blockShow_invest {
+  flex: 0 1 50%;
+}
+.blockShow_allProcent {
+  flex: 0 1 50%;
+}

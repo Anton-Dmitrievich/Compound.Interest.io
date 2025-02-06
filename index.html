@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="body">
+
+		<header class="header">
+			<h1>Сложный процент</h1>
+		</header>
+
+		<div class="calculator">
+			<div class="flexbox_calculator">
+				<div class="calculator_stepOne">
+					<div class="calculator_title">
+						<label>Начальная сумма</label>
+					</div>
+					<div id="chekStartSum" class="calculator_beginSum">
+						<input id="start" type="number" class="inputStart">
+						<p id="dontSatrt"></p>
+					</div>
+				</div>
+				<div class="calculator_blockLeft">
+					<div class="flexbox_blockLeft">
+						<div class="calculator_regular">
+							<div class="calculator_Blocklabel">
+								<label>Регулярная сумма</label>
+							</div>
+							<div class="calculator_inputSum">
+								<input id='regularAmount' type="number">
+							</div>
+						</div>
+						<div class="calculator_procent">
+							<div class="calculator_Blocklabel">
+								<label>Прцент</label>
+							</div>
+							<div>
+								<input id="procent" type="number" class="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="calculator_blockRight">
+					<div class="flexbox_blockRight">
+						<div class="calculator_Time">
+							<div class="calculator_buttonTime">
+								<button value="1" id="buttonTimeSum">Каждый год</button>
+							</div>
+							<div id="ulTimeSum" class="calculator_ulSum">
+								<ul>
+									<li><button value="1" id="yearTimeSum" class="calculator_ulSum-buttonFirst">Каждый
+											год</button>
+									</li>
+									<li><button value="12" id="monthTimeSum"
+											class="calculator_ulSum-buttonSecond">Каждый
+											месяц</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="calculator_Time">
+							<div class="calculator_buttonTime">
+								<button value="1" id="buttonTimeRate">Каждый год</button>
+							</div>
+							<div id="ulTimeRate" class="calculator_ulSum ">
+								<ul>
+									<li><button id="yearTimeRate" value="1" class="calculator_ulSum-buttonFirst">Каждый
+											год</button>
+									</li>
+									<li><button id="monthTimeRate" value="12"
+											class="calculator_ulSum-buttonSecond">Каждый
+											месяц</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="calculator_stepOne">
+				<div class="calculator_years">
+					<label>Год</label>
+					<input id="age" type="number" class="inputStart ">
+				</div>
+			</div>
+			<div class="calculator_blockBatton">
+				<button id="calculation" class='button'>Расчет</button>
+			</div>
+		</div>
+		<div class="blockShow">
+			<div class="flexbox_blockShow">
+				<div class="blockShow_common">
+					<label>Итоговый баланс</label>
+					<p id="finish">0</p>
+				</div>
+				<div class="blockShow_invest">
+					<label>Всего пополнений</label>
+					<p id="TotalTopups">0</p>
+				</div>
+				<div class="blockShow_allProcent">
+					<label>Всего процентов</label>
+					<p id="TotalPercent">0</p>
+				</div>
+			</div>
+			<div class="grafik">
+
+			</div>
+		</div>
+	</div>
+	<script src="js/js.js">	</script>
+</body>
+
+</html>
